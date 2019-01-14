@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Phonebook</title>
+  </head>
+  <body>
+    <h2>Public Phonebook</h2>
+    <h3>Add record to phonebook</h3>
+    <form class="" method="post">
+      {% csrf_token %}
+      {{ recordAddForm }}
+      <input type="submit" name="" value="Add">
+    </form>
+    <h3>Get record from phonebook</h3>
+    <form class="" method="post">
+      {% csrf_token %}
+      {{ recordGetForm }}
+      <input type="submit" name="" value="Get">
+    </form>
+  </body>
+</html>
